@@ -1,0 +1,11 @@
+<form action="" method='post' enctype="multipart/form-data" >{% csrf_token %}
+    {{form}}
+<button type='submit'>submit</button>
+</form>
+<br><br>
+<li>
+{% for item in data %}
+    <ol>{{item.name}} | {{item.value}} | {{item.unit}}</ol>
+{% endfor %}
+</li>
+

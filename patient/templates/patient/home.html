@@ -1,0 +1,2 @@
+{% for item in patient %} <li>{{item}} {{item.address}}</li>  {% endfor %}
+<a href="{% url 'patient_create' %}">add patient</a>

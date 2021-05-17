@@ -1,0 +1,6 @@
+<h1>Patient Profile Page</h1>
+fname :{{ patient.fname }} <br> lname : {{patient.lname}}  <br> address : {{patient.address}}  <br> zip : {{patient.zip}}
+
+<br>
+<br>
+<a href="{% url 'document_upload' patient.pk %}"> upload document ></a>
